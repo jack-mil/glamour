@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
   filename: "themes/catppuccin-{{ flavor.identifier }}.json"
-  hex_format: "#{{r}}{{g}}{{b}}"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 {
   "document": {
