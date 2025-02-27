@@ -15,7 +15,8 @@ whiskers:
   },
   "block_quote": {
     "indent": 1,
-    "indent_token": "│ "
+    "indent_token": "│ ",
+    "background_color": "{{ surface0.hex }}"
   },
   "paragraph": {},
   "list": {
@@ -27,29 +28,34 @@ whiskers:
     "bold": true
   },
   "h1": {
-    "prefix": "▓▓▓ ",
-    "suffix": " ",
-    "color": "{{ red.hex }}",
-    "bold": true
+    "prefix": "▓▓▓▓▓▓ ",
+    "suffix": " ▓▓▓▓▓▓",
+    "color": "{{ red.hex }}"
   },
   "h2": {
-    "prefix": "▓▓▓▓ ",
+    "prefix": "▓▓▓▓▓ ",
+    "suffix": " ▓▓▓▓▓",
     "color": "{{ peach.hex }}"
   },
   "h3": {
-    "prefix": "▓▓▓▓▓ ",
+    "prefix": "▓▓▓▓ ",
+    "suffix": " ▓▓▓▓",
     "color": "{{ yellow.hex }}"
   },
   "h4": {
-    "prefix": "▓▓▓▓▓▓ ",
-    "color": "{{ green.hex }}"
+    "prefix": "▓▓▓ ",
+    "suffix": " ▓▓▓",
+    "color": "{{ green.hex }}",
+    "bold": true
   },
   "h5": {
-    "prefix": "▓▓▓▓▓▓▓ ",
-    "color": "{{ sapphire.hex }}"
+    "prefix": "~~ ",
+    "suffix": " ~~",
+    "color": "{{ sky.hex }}"
   },
   "h6": {
-    "prefix": "▓▓▓▓▓▓▓▓ ",
+    "prefix": "~ ",
+    "suffix": " ~",
     "color": "{{ lavender.hex }}"
   },
   "text": {},
@@ -57,14 +63,17 @@ whiskers:
     "crossed_out": true
   },
   "emph": {
-    "italic": true
+    "italic": true,
+    "color": "{{ flamingo.hex }}"
   },
   "strong": {
-    "bold": true
+    "bold": true,
+    "color": "{{ flamingo.hex }}"
   },
   "hr": {
     "color": "{{ overlay0.hex }}",
-    "format": "\n--------\n"
+    "format": "\n--------\n",
+    "bold": true
   },
   "item": {
     "block_prefix": "• "
@@ -78,10 +87,12 @@ whiskers:
   },
   "link": {
     "color": "{{ blue.hex }}",
-    "underline": true
+    "underline": true,
+    "block_prefix": "(",
+    "block_suffix": ")"
   },
   "link_text": {
-    "color": "{{ lavender.hex }}",
+    "color": "{{ sapphire.hex }}",
     "bold": true
   },
   "image": {
@@ -89,13 +100,13 @@ whiskers:
     "underline": true
   },
   "image_text": {
-    "color": "{{ lavender.hex }}",
+    "color": "{{ sapphire.hex }}",
     "format": "Image: {{ "{{.text}}" }} →"
   },
   "code": {
     "prefix": " ",
     "suffix": " ",
-    "color": "{{ maroon.hex }}",
+    "color": "{{ teal.hex }}",
     "background_color": "{{ mantle.hex }}"
   },
   "code_block": {
@@ -106,8 +117,8 @@ whiskers:
         "color": "{{ text.hex }}"
       },
       "error": {
-        "color": "{{ text.hex }}",
-        "background_color": "{{ red.hex }}"
+        "color": "{{ red.hex }}",
+        "background_color": "{{ crust.hex }}"
       },
       "comment": {
         "color": "{{ overlay0.hex }}"
@@ -163,7 +174,9 @@ whiskers:
       "literal_number": {
         "color": "{{ peach.hex }}"
       },
-      "literal_date": {},
+      "literal_date": { 
+        "color": "{{ pink.hex }}"
+      },
       "literal_string": {
         "color": "{{ green.hex }}"
       },
@@ -198,7 +211,9 @@ whiskers:
     "row_separator": "─"
   },
   "definition_list": {},
-  "definition_term": {},
+  "definition_term": {
+    "color": "{{ green.hex }}"
+  },
   "definition_description": {
     "block_prefix": "\n🠶 "
   },
